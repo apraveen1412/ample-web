@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./home.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="bg-container p-3">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./home.html">
+            <img
+              src="https://svce.edu.in/images/svcelogo.png" class="image-logo"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active text-white" id="navItem1" href="./home.html">
+                Home
+              <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-link text-white" id="navItem2" href="#" >About</a>
+              <a class="nav-link text-white" id="navItem3" href="#" >Events</a>
+              <a class="nav-link text-white" id="navItem3" href="#" >Gallery</a>
+              <a class="nav-link text-white" id="navItem4" href="#" >Contact</a>
+              <a class="nav-link text-white" id="navItem5" href="#" >Previous Ample</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex flex-column justify-content-center">
+          <div class="text-center">
+            <h1 class="underline">AMPLE - 2024</h1>
+          </div>
+
+          <div class="description">
+            <p>Welcome to a world where innovation and creativity collide! Our diverse range of events is designed to challenge, inspire, and engage attendees from all backgrounds. Whether you're a seasoned professional looking to expand your horizons or just starting your journey of exploration, there's something here for everyone. Experience a dynamic lineup of thought-provoking seminars, interactive discussions, and networking opportunities that will spark your imagination and push you to think differently. Join us as we explore cutting-edge ideas, celebrate creativity, and inspire new ways of thinking. Come and be a part of this exciting journey where ideas take flight and innovation knows no bounds. Embrace the challenge, ignite your passion, and unlock your full potential with us. The future is waiting are you ready to explore it?</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="eventDark" class="dark">
+      <div class="heading">
+        <h1>EVENTS</h1>
+        <div class="eventButtons">
+            <button id="techButton" onclick="showCards('tech')">Technical Events</button>
+            <button id="nonTechButton" onclick="showCards('nonTech')">Non Technical Events</button>
+        </div>
+    </div>
+    <div id="technicalEvents" class="flexcards active">
+        <div class="card active" style="--bg: url(./images/new_technologies.jpg);">
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              1
+            </div>
+          <div class="info">
+              <div class="title">NEW TECHNOLOGIES</div>
+              <div>Space engineering becomes more and more advanced</div>
+          </div>
+          </div>
+        </div>
+      
+        <div class="card" style="--bg: url(./images/new_technologies.jpg);"> 
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              2
+            </div>
+            <div class="info">
+              <div class="title">NEW TECHNOLOGIES</div>
+              <div>Space engineering becomes more and more advanced</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" style="--bg: url(./images/new_technologies.jpg);">
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              3
+            </div>
+            <div class="info">
+              <div class="title">NEW TECHNOLOGIES</div>
+              <div>Space engineering becomes more and more advanced</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card"style="--bg: url(./images/new_technologies.jpg);">
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              4
+            </div>
+            <div class="info">
+              <div class="title">NEW TECHNOLOGIES</div>
+              <div>Space engineering becomes more and more advanced</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <div id="nonTechnicalEvents" class="flexcards">
+        <div class="card active" style="--bg: url(./images/cricket.jpg);">
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              1
+            </div>
+          <div class="info">
+              <div class="title">CRICKET</div>
+              <div>Swing for the stands, and rule the crease</div>
+          </div>
+          </div>
+        </div>
+      
+        <div class="card" style="--bg: url(./images/cricket.jpg);">
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              2
+            </div>
+            <div class="info">
+              <div class="title">CRICKET</div>
+              <div>Swing for the stands, and rule the crease</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" style="--bg: url(./images/cricket.jpg);">
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              3
+            </div>
+            <div class="info">
+              <div class="title">CRICKET</div>
+              <div>Swing for the stands, and rule the crease</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" style="--bg: url(./images/cricket.jpg);">
+          <div class="shadow"></div> 
+          <div class="label">
+            <div class="icon">
+              4
+            </div>
+            <div class="info">
+              <div class="title">CRICKET</div>
+              <div>Swing for the stands, and rule the crease</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    </div>
+    
+    <div class="about">
+      <div class="section">
+          <h1>About Us</h1>
+          <div class="underline"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eos repellendus est aut temporibus dicta, sint illo aperiam inventore quos totam officiis. Fugit iusto quos impedit vero accusantium nulla nostrum!
+          Quos quaerat assumenda magnam quidem minima qui numquam quisquam illo similique iste porro dignissimos consequatur neque mollitia reprehenderit consequuntur, quod iusto amet sequi eveniet est suscipit expedita. Corrupti, ipsam eaque!</p>
+      </div>
+      <div class="section">
+          <h1>Contact Us</h1>
+          <div class="underline"></div>
+      </div>
+  </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+    
