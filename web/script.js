@@ -22,3 +22,6 @@ function showCards(eventType) {
 document.addEventListener('DOMContentLoaded', () => {
         showCards('tech');
 });
+document.getElementById("customBackArrow").addEventListener("click", function() {
+    window.history.back(); 
+  });
