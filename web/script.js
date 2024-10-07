@@ -22,6 +22,7 @@ function showCards(eventType) {
 document.addEventListener('DOMContentLoaded', () => {
         showCards('tech');
 });
+
 function scrollToBottom(){
     window.scrollTo({
       top:6000,
@@ -34,3 +35,5 @@ function scrollToBottom(){
         behaviour:'smooth'
       });
     }
+
+
