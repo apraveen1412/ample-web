@@ -22,6 +22,18 @@ function showCards(eventType) {
 document.addEventListener('DOMContentLoaded', () => {
         showCards('tech');
 });
-document.getElementById("customBackArrow").addEventListener("click", function() {
-    window.history.back(); 
-  });
+
+function scrollToBottom(){
+    window.scrollTo({
+      top:6000,
+      behaviour:'smooth'
+      });
+    }
+  function scrollTodown(){
+      window.scrollTo({
+        top:800,
+        behaviour:'smooth'
+      });
+    }
+
+
