@@ -23,6 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
         showCards('tech');
 });
 
+function scrollToBottom(){
+    window.scrollTo({
+      top:6000,
+      behaviour:'smooth'
+      });
+    }
+  function scrollTodown(){
+      window.scrollTo({
+        top:800,
+        behaviour:'smooth'
+      });
+    }
+
 document.getElementById('contact-mail').onclick = function () {
     const email = "anirudhalevooru3114@gmail.com";
     const subject = "Inquiry about AMPLE 2024";
