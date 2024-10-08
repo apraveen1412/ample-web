@@ -36,6 +36,7 @@ function scrollToBottom(){
       });
     }
 
+
 document.getElementById('contact-mail').onclick = function () {
     const email = "anirudhalevooru3114@gmail.com";
     const subject = "Inquiry about AMPLE 2024";
