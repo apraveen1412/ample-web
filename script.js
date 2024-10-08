@@ -37,10 +37,19 @@ function scrollToBottom(){
     }
 
 document.getElementById('contact-mail').onclick = function () {
-    const email = "anirudhalevooru3114@gmail.com"; 
+    const email = "anirudhalevooru3114@gmail.com";
     const subject = "Inquiry about AMPLE 2024";
     const body = "Hello, I would like to know more about AMPLE 2024.";
-    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    window.location.href = mailtoUrl; 
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // Use mailto for mobile devices
+        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoUrl;
+    } else {
+        // Use Gmail URL for desktop
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(gmailUrl, '_blank');
+    }
 };
